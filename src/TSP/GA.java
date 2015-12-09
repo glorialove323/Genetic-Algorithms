@@ -146,8 +146,8 @@ public class GA {
 			
 			System.out.println("The average fitness in"+g+"generation is:"+averageFitness[g]+",and the best fitness is:"+bestFitness);
 			for(int i=0;i<N;i++){
-				tmp+=chromosomes[i].getFitness()/sum;
-				selectionP[i]=tmp;
+				tmp+=chromosomes[i].getFitness()/sum;//轮盘赌选择
+				selectionP[i]=tmp;//确定选择概率
 			}
 		}
 	}
